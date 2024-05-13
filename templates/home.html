@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+      html{ height:100%; }
+        body{
+         min-height:100%;
+         padding:0;
+         margin:0;
+         position:relative;
+         background-image: url('https://w0.peakpx.com/wallpaper/294/808/HD-wallpaper-two-person-using-laptops.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;
+
+         }
+
+        body::after{ content:''; display:block; height:100px; }
+
+        footer{
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:50px;
+            text-align:center;
+            background-color: rgba(0,0,0,0.5) !important;
+            color:#fff;
+            }
+
+        .alert-purple {
+        background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(247, 30, 30) 100.3%);
+
+            color: #fff; }
+
+      .card{
+            height: 370px;
+            margin-top: 75px;
+            margin-bottom: auto;
+            width: 400px;
+            background-color: rgba(0,0,0,0.5) !important;
+            color: #FFC312;
+            }
+      .card-header h3{
+            text-align:center;
+            color: white;
+            }
+
+  </style>
+
+    <title>Flask Home </title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark alert-purple sidebarNavigation" >
+        <div class="container-fluid">
+        <a class="navbar-brand" href="/">Flask Home</a>
+
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/signup">Signup</a>
+                </li>
+            </ul>
+           <!--  <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </div>
+    </nav>
+
+
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+                <h3>Welcome To My Project</h3>
+                <div class="body">
+                    <p><br>
+                        With this Project , I created a Flask Website with the following pages.
+                        Home Page, Signup Page for resgister the new users and Login Page for the registered user to logged in.
+                        After the successful login there is a form to fill customer's details and display that details through the details page.
+                        user can redirect to the home page after the form submission,and also user can logging out through the logout button<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<footer>
+    <p class="navbar-text ">© 2024 - Site Built By @siya</p>
+</footer>
+</body>
+</html>

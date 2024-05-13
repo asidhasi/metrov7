@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>customer details</title>
+    <style>
+        html{ height:100%; }
+                body{
+                 min-height:100%;
+                 padding:50px;
+                 margin:0;
+                 position:relative;
+                 background-image: url('https://w0.peakpx.com/wallpaper/294/808/HD-wallpaper-two-person-using-laptops.jpg');
+                 background-size: cover;
+                 background-repeat: no-repeat;
+
+                 }
+        .card{
+            height: 370px;
+            margin-top: 75px;
+            margin-bottom: auto;
+            width: 400px;
+            background-color: rgba(1,1,1,1) ;
+            color: #FFC312;
+            }
+        tr{
+
+            color:#ffffff;
+        }
+    </style>
+
+
+</head>
+<body>
+ <h2 style=" text-align:center;color:#ffffff;">Customer Details</h2>
+
+
+
+        <div class="container">
+	        <div class="d-flex justify-content-center h-100">
+		        <div class="card link-template-tabcard" style="width:800px;margin: 20px auto;">
+                    <div class="card-title" >
+                        <h5>Table of Customer Details</h5>
+                        <div class="body">
+                            <p class="card-text">
+
+                              <table class="table" >
+                                {% for key,value in formdata.items() %}
+                                <tr>
+                                  <th scope="col">{{ key }}:</th>
+                                  <td>{{ value }}</td>
+                                  {% endfor %}
+                                </tr>
+                              </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-7" align="right">
+                        <a href="/" class="btn btn-primary" >Home</a>
+
+                        <a href="/" class="btn btn-primary" >Logout</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+</html>
