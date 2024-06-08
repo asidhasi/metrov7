@@ -65,7 +65,7 @@ def signup():
 
         user = User.query.filter_by(username=username, password=password).first()
         if user:
-            msg1 = "User already exist"
+            msg1 = "User already exist in the database"
             return render_template('signup.html',msg1=msg1)
         else:
             new_user = User(username=username, password=password)
